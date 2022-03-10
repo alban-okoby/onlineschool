@@ -1,2 +1,2 @@
 # onligneschool
- templae d'un etablissement en ligne
+ template d'un établissement en ligne
