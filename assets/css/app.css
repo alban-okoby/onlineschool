@@ -1,5 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,400&display=swap');
 
+/* Couleurs de la page */
+:root {
+    --violet : #320450;
+    --pink : rgb(146, 37, 55);
+    --white : white;
+    --body : #333;
+}
 *{
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+*::selection {
+    background-color:var(--pink);
+    color: var(--white);
+}
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+body {
+    background-color: var(--body);
+}
+
+/* HEDER BLOC */
+header {
+    width: 96%;
+    background-color: var(--white);
+    position: fixed;
+    border-radius: 5rem;
+    top : 2rem; left : 50%;
+    transform: translate(-50%);
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+    padding:1rem 2rem;
+    z-index: 9999;
+}
+
+.navbar ul{
+    margin: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar ul .active,
+.navbar a:hover{
+    color: var(--violet);
+}
+
+header .logo {
+    font-size:2.5rem !important;
+    color: var(--violet);
+    /* text-transform: uppercase; */
+}
+
+.logo i {
+    padding: 0 .2rem;
+    color: var(--pink)
+}
+
+header .fa-bars {
+    font-size: 3rem;
 }
