@@ -45,29 +45,69 @@ header {
     z-index: 9999;
 }
 
-.navbar ul{
+header .navbar ul{
     margin: 0 1rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-
+    list-style: none;
+}
+header .navbar ul li{
+    margin: 0 1rem;
+}
+header .navbar ul li a{
+    justify-content: space-between;
+    font-size: 1.9rem;
 }
 
+header .navbar ul li a:hover{
+    transition: .2s;
+}
 .navbar ul .active,
 .navbar a:hover{
     color: var(--violet);
 }
 
 header .logo {
-    font-size:2.5rem !important;
     color: var(--violet);
+    font-size:2.5rem;
     /* text-transform: uppercase; */
 }
 
 .logo i {
+    color: var(--pink);
     padding: 0 .2rem;
-    color: var(--pink)
 }
 
 header .fa-bars {
+    color: var(--pink);
     font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+    header .fa-bars {
+        display:block;
+    }
+    header .navbar {
+        background-color: var(--white);
+        width: 100%;
+        top:-100rem;left:0;
+        border-radius: 1rem;
+        position:fixed;
+    }
+    header .navbar ul{
+        padding: 2rem 0;
+        flex-flow: column;
+    }
+    header .navbar ul li{
+        font-size: 3rem;
+        display: block;
+        text-align: center;
+    }
 }
