@@ -86,8 +86,12 @@ header .fa-bars {
     display: none;
 }
 
+header .fa-times {
+    color: var(--pink);
+    transform: rotate(180deg);
+}
 /* RESPONSIVE */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     html {
         font-size: 55%;
     }
@@ -100,14 +104,24 @@ header .fa-bars {
         top:-100rem;left:0;
         border-radius: 1rem;
         position:fixed;
+        opacity: 0;
+        transition:.2s ease-out;
     }
     header .navbar ul{
         padding: 2rem 0;
         flex-flow: column;
     }
-    header .navbar ul li{
+    header .navbar ul li a{
+        text-align: center;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    header .navbar ul li a{
         font-size: 3rem;
         display: block;
-        text-align: center;
+    }
+    header .nav-toggle {
+        top: 5.5rem;
+        opacity: 1;
     }
 }
