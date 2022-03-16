@@ -94,10 +94,10 @@ header .fa-bars {
 
 header .fa-times {
     color: var(--pink);
-    transform: rotate(180deg) ;
+    transform: rotate(180deg);
     transition: .7s ease;
-}
-/* RESPONSIVE HEADER*/
+} 
+    /* RESPONSIVE HEADER*/
 @media screen and (max-width: 768px) {
     html {
         font-size: 55%;
@@ -132,3 +132,55 @@ header .fa-times {
         opacity: 1;
     }
 }
+
+/* SCECTION D'ACCUEIL */
+    .home-section {
+        position: relative;
+        background-position: center;
+        min-height: 100vh;
+        background-attachment: fixed;
+        background: linear-gradient(rgba(198, 59, 250, 0.8)); 
+        /* Noublie pas d'ajouter une image de fond */
+        z-index: 0;
+        overflow: hidden;
+        background-size: cover;
+    }
+
+    .home-section .content {
+        display:flex;
+        align-items: center;
+        flex-flow: column;
+        padding-top:14rem;
+        padding: bottom 8px;
+    }
+    .home-section h1 {
+        color: var(--white);
+        font-size: 5rem;
+        padding: 0 1rem;
+        text-transform: uppercase;
+        text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+        
+    }
+    .home-section p {
+        color: var(--white);
+        font-size: 2rem;
+        padding: 0 24rem;
+    }
+
+    .home-section button {
+        background-color: var(--pink);
+        color: var(--white);
+        border-radius: 4rem;
+        border: none;
+        box-shadow: 0 .4rem 1rem rgb(230, 225, 225);
+        /* box-shadow: 0 0rem 0rem .3rem; */
+        font-size: 2rem;
+        padding: .5rem 2rem;
+        margin-top: .5rem;
+        cursor: pointer;
+        transition: .3s;
+        width: 17rem;
+        height: 5rem;
+    }
+
+/* FIN DE SECTION D'ACCUEIL' */
