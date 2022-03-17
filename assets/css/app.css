@@ -6,6 +6,9 @@
     --pink : rgb(209, 27, 200);
     --white : white;
     --body : #333;
+    --orange : #ff7b00;
+    --gray : gray;
+    --green : #2db92d;
 }
 *{
     font-family: 'Roboto', sans-serif;
@@ -135,6 +138,14 @@ header .fa-times {
         top: 5.5rem;
         opacity: 1;
     }
+
+    /* RESPONSIVE DE LA SECTION ACCEUIL */
+    .home-section .content p {
+        padding: 1.5rem 2rem;
+    }
+    .home-section::before {
+        display: none;
+    }
 }
 
 /* SCECTION D'ACCUEIL */
@@ -143,7 +154,9 @@ header .fa-times {
         background-position: center;
         min-height: 100vh;
         background-attachment: fixed;
-        background: linear-gradient(rgba(198, 59, 250, 0.8)); 
+        background: url('../image/nature_et_eau3.png');
+        /* background: url('../img/nature_et_eau3.png');  */
+
         /* Noublie pas d'ajouter une image de fond */
         z-index: 0;
         overflow: hidden;
@@ -157,7 +170,7 @@ header .fa-times {
         padding-top:14rem;
         padding: bottom 8px;
     }
-    .home-section h1 {
+    .home-section .content h1 {
         color: var(--white);
         font-size: 5rem;
         padding: 0 1rem;
@@ -190,5 +203,67 @@ header .fa-times {
         letter-spacing: 0.4rem;
         transition: .3s;
     }
-
+    .box-container {
+        display:flex;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box-container .box{
+        background-color: var(--white);
+        text-align: center;
+        height: 21rem;
+        width: 25rem;
+        border-radius: 1rem;
+        box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+        margin: 2rem;
+    }
+    .box-container .box i{
+        background-color: var(--pink);
+        color: var(--white);
+        width: 6rem;
+        height: 6rem;
+        margin: 2rem 0;
+        font-size: xx-large;
+        line-height: 5.9vh;
+        text-align: center;
+        border-radius: 50%;
+        transition: .3s;
+        transform: scale(1.1)
+    }
+    .box-container .box h1{
+        color: var(--pink);
+        font-size: 2rem;
+        transition: .3s;
+    }
+    .box-container .box:hover h1{
+        color: var(--orange);
+        transition: .2s;
+    }
+    .box-container .box:hover i{
+        color: var(--green);
+        transition: .2s;
+        transform: scale(1);
+        /* background-color: var(--orange) */
+    }
+    .box-container .box:hover p{
+        font-weight: 600;
+    }
+    .box-container .box p{
+        color: var(--gray);
+        font-size: 1.3rem;
+        transition: .2s;
+        padding: 1rem 2rem;
+    }
+    .home-section::before {
+        width: 120%;
+        content: '';
+        position: absolute;
+        left:50%;bottom: -25%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        border-top: 75vh solid var(--white);
+        z-index: -1;
+    }
 /* FIN DE SECTION D'ACCUEIL' */
