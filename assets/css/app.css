@@ -267,3 +267,46 @@ header .fa-times {
         z-index: -1;
     }
 /* FIN DE SECTION D'ACCUEIL' */
+
+/* STYLE A PROPOS  */
+.heading {
+    color: var(--pink);
+    font-size: 4rem;
+    padding-top: 6rem;
+    padding: 0 1rem;
+    text-align: center;
+    letter-spacing: .2rem;
+    font-weight: bold;
+}
+.title {
+    color: var(--gray);
+    padding: 0 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400; 
+    
+}
+.about .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .row .content{
+    padding-left: 5rem;
+}
+.about .row img {
+    width: 50vw;
+    height: 50vh;
+}
+.about .content h3 {
+    font-size: 3rem;
+    color: var(--white);
+}
+.about .content p {
+    color: #999;
+
+}
+.about .content button {
+
+}
+/* FIN DE STYLE A PROPOS  */
