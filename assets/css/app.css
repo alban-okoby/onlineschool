@@ -5,8 +5,10 @@
     --violet : #320450;
     --pink : rgb(209, 27, 200);
     --white : white;
-    --body : #333;
+    /* --body : #333; */
     --orange : #ff7b00;
+    /* --accueil : #660746; */
+    --accueil : linear-gradient(to bottom, #d67171, #d67171, white, white, white);
     --gray : gray;
     --green : #2db92d;
 }
@@ -31,7 +33,11 @@ html {
 body {
     background-color: var(--body);
 }
-
+/* SECTION d'ACCUEIL (premier visuel) */
+#block-accueil {
+    padding-bottom: 0;
+    background : var(--accueil)
+}
 /* HEADER BLOC */
 header {
     width: 96%;
@@ -52,8 +58,10 @@ header {
     top : 0;
     border-radius: 0;
     box-shadow: 0 .1rem .3rem rgba(0, 0, 0,.3);
+    padding: 2rem;
+    transition: .1s ease;
+    background: var(--accueil);
 }
-
 header .navbar ul{
     margin: 0 1rem;
     display: flex;
@@ -74,9 +82,9 @@ header .navbar ul li a:hover{
 }
 .navbar ul .active,
 .navbar a:hover{
-    color: var(--violet);
+    color: var(--pink);
 }
-
+ 
 header .logo {
     color: var(--violet);
     font-size:2.5rem;
@@ -145,6 +153,16 @@ header .fa-times {
     }
     .home-section::before {
         display: none;
+    }
+    .about .row {
+        flex-flow: column-reverse;
+    }
+    .about .image img { 
+        width :90vw;
+        height :20vh;
+    }
+    .about .content {
+        padding: 2.5rem
     }
 }
 
@@ -295,18 +313,29 @@ header .fa-times {
     padding-left: 5rem;
 }
 .about .row img {
-    width: 50vw;
+    width: 70vw;
     height: 50vh;
 }
 .about .content h3 {
-    font-size: 3rem;
     color: var(--white);
+    font-size: 3rem;
 }
 .about .content p {
     color: #999;
-
+    font-size: 1.6rem;
+    padding: 0 1rem;
 }
 .about .content button {
+    background-color: var(--pink);
+    color: var(--white);
+    height : 3.5rem;
+    width : 16rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+    border: none;
+    box-shadow: 0 .3rem 1rem rgb(0, 0, 0, .3);
+    cursor: pointer;
+    transition: .2s;
 
 }
 /* FIN DE STYLE A PROPOS  */
