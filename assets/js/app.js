@@ -11,10 +11,14 @@ $(document).ready(function(){
     $('.fa-bars').removeClass('fa-times');
     $('.navbar').removeClass('nav-toggle');
 
-    if($(window).scrollTop() > 30){
+    if($(window).scrollTop() > 60){
       $('header').addClass('header-active');
+      if($(window).scrollTop() > 320){
+        $('header').addClass('header-active-design');
+      }
     }else{
       $('header').removeClass('header-active');
+      $('header').removeClass('header-active-design');
     }
 
     $('section').each(function(){
