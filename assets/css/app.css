@@ -262,13 +262,13 @@ header .fa-times {
         color: var(--orange);
         transition: .2s;
     }
-    .box-container .box:hover i{
+    .home-section .box-container .box:hover i{
         color: var(--green);
         transition: .2s;
         transform: scale(1);
         /* background-color: var(--orange) */
     }
-    .box-container .box:hover p{
+    .home-section .box-container .box:hover p{
         font-weight: 600;
     }
     .box-container .box p{
@@ -403,4 +403,36 @@ header .fa-times {
     }
 
 /* FIN DE STYLE DE LA SECTION FORMATEURS */
+
+/* STYLE DE LA SECTION COURS || FORMATIONS */
+.formation .box-container .box {
+    height: 25rem;
+    box-shadow: .4rem .5rem .1rem var(--violet);
+    border-radius: 1rem;
+}
+    .formation .box-container .box i {
+        height: 8rem; width: 8rem;
+        line-height: 6.5rem;
+        text-align: center;
+        border-radius: 50%;
+        border: 1rem solid var(--white);
+        border-left: solid 1rem var(--pink);
+        border-right: solid 1rem var(--pink);
+        box-shadow: 0 .9rem var(--white) inset;
+        /* box-shadow: 0 0 0 1rem var(--white); */
+        font-size: 2.9rem;
+
+    }
+    .formation .box-container .box h3 {
+        font-size: 1.9rem;
+        color: var(--violet);
+        padding:  0.5rem 0;
+    }
+    .formation .box-container .box p {
+        font-size: 1.3rem;
+        color: var(--black);
+    }
+/* STYLE DE LA SECTION COURS || FORMATIONS */
+
+
 
