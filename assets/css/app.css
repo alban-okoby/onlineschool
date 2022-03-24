@@ -39,6 +39,7 @@ body {
 #block-accueil {
     padding-bottom: 0;
     background : var(--accueil);
+    border-bottom: white;
 }
 /* HEADER BLOC */
 header {
@@ -122,19 +123,20 @@ header .fa-times {
 .home-section {
     position: relative;
     background-position: center;
-    min-height: 90vh;
+    min-height: 100vh;
     background-attachment: fixed;
     background: url('../image/sergey-zolkin.jpg');
     z-index: 0;
     overflow: hidden;
     background-size: cover;
+    
 }
 
 .home-section .content {
     display:flex;
     align-items: center;
     flex-flow: column;
-    padding-top:15rem;
+    padding-top:17rem;
     padding: bottom 1px;
 }
 .home-section .content h1 {
@@ -231,7 +233,7 @@ header .fa-times {
     left:50%;bottom: -25%;
     transform: translateX(-50%);
     border-radius: 50%;
-    border-top: 75vh solid var(--white);
+    border-top: 80vh solid var(--white);
     z-index: -1;
 }
 .formation .box-container {
@@ -269,7 +271,7 @@ header .fa-times {
 }
 .about .row img {
     width: 70vw;
-    height: 50vh;
+    height: 40vh;
 }
 .about .content h3 {
     color: var(--black);
@@ -410,7 +412,7 @@ header .fa-times {
 /* STYLE DE LA SECTION NOTES */
 
 
-@media screen and ((min-width: 912px) and (min-height:900px)) {
+@media screen and (min-width: 870px) {
     
     .home-section {
         margin-bottom: -11rem;
@@ -419,8 +421,21 @@ header .fa-times {
     .about {
         position: relative;
         padding: 3rem 2rem;
+        margin-top: -14rem;
+    }
+    .about .image img {
+        min-height: 30vh;
     }
 }
+@media screen and (min-width: 769px) and (max-width: 850px) {
+    .about {
+        position: relative;
+        padding: 3rem 2rem;
+        margin-top: -28em;
+        margin-top: -8rem;
+
+    }
+  }
 
 @media screen and (max-width: 768px) {
     /* RESPONSIVE HEADER*/
@@ -476,5 +491,10 @@ header .fa-times {
     }
     .about .content {
         padding: 2.5rem
+    }
+    .formateur .card img {
+        height : 26.9vh;
+        border-top-left-radius: 11rem;
+        border-bottom-right-radius: 11rem;
     }
 }
