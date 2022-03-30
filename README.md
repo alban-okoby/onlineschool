@@ -1,2 +1,3 @@
 # onligneschool
- template d'un établissement en ligne
+ 
+ OnligneSchool est un template d'un établissement en ligne
