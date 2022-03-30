@@ -1,3 +1,3 @@
-# onligneschool
+# onlineschool
  
- OnligneSchool est un template d'un établissement en ligne
+ OnlineSchool est un template d'un établissement en ligne
