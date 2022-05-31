@@ -35,6 +35,7 @@ html {
 body {
     background-color: var(--body);
 }
+
 /* SECTION d'ACCUEIL (premier visuel) */
 #block-accueil {
     padding-bottom: 0;
@@ -242,11 +243,10 @@ header .fa-times {
 }
 /* FIN DE SECTION D'ACCUEIL' */
 
-/* STYLE A PROPOS  */
+/* STYLE ABOUT  */
 .heading {
     color: var(--violet2);
-    font-size: 4rem;
-    padding-top: 6rem;
+    font-size: 5rem;
     margin-top: 4rem;
     padding: 0 1rem;
     padding-bottom: 1.5rem;
@@ -257,13 +257,17 @@ header .fa-times {
 .title {
     color: var(--gray);
     padding: 0 1rem;
-    font-size: 2rem;
+    font-size: 2.7rem;
     text-align: center;
     font-weight: 400; 
     
 }
+.about {
+    padding: .3rem 1rem;
+}
 .about .heading {
     margin-bottom: 5rem;
+    margin-bottom: 12rem;
 } 
 .about .title {
     padding: 2rem;
@@ -456,6 +460,16 @@ footer .credit span,a{
 
 @media screen and (min-width: 870px) {
     
+    .home-section::before {
+        width: 120%;
+        content: '';
+        position: absolute;
+        left:50%;bottom: -25%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        border-top: 60vh solid var(--white);
+        z-index: -1;
+    }
     .home-section {
         margin-bottom: -11rem;
         box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
@@ -463,18 +477,21 @@ footer .credit span,a{
     .about {
         position: relative;
         padding: 3rem 2rem;
-        margin-top: -14rem;
+        margin-top: 5rem;
     }
-    .about .image img {
+    .about .heading {
+        margin-top: -10%;
+    }
+    /* .about .image img {
         min-height: 30vh;
-    }
+    } */
 }
 @media screen and (min-width: 769px) and (max-width: 850px) {
     .about {
         position: relative;
         padding: 3rem 2rem;
         margin-top: -28em;
-        margin-top: -8rem;
+        margin-top: -6rem;
 
     }
   }
@@ -517,10 +534,11 @@ footer .credit span,a{
         opacity: 1;
     }
     .heading {
-        font-size: large;
+        font-size: 3rem;
+        margin-bottom: 0;
     }
     .title {
-        font-size: medium;
+        font-size: large;
     }
 
     /* RESPONSIVE DE LA SECTION ACCEUIL */
@@ -529,7 +547,7 @@ footer .credit span,a{
     }
     .home-section .content p {
         padding: 1.5rem .9rem;
-        font-size : medium;
+        font-size : large;
     }
     .home-section::before {
         display: none;
@@ -538,8 +556,10 @@ footer .credit span,a{
         flex-flow: column-reverse;
     }
     .about .image img { 
-        width :90vw;
-        height :20vh;
+        /* width :90vw; */
+        /* height :20vh; */
+        width: 100%;
+        height: auto;
     }
     .about .content {
         padding: .5rem;
