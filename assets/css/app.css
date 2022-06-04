@@ -209,10 +209,7 @@ header .fa-times {
     font-size: 2rem;
     transition: .3s;
 }
-/* .box-container .box:hover h1{
-    color: var(--orange);
-    transition: .2s;
-} */
+
 .home-section .box-container .box:hover i{
     color: var(--green);
     transition: .2s;
@@ -266,8 +263,8 @@ header .fa-times {
     padding: .3rem 1rem;
 }
 .about .heading {
-    margin-bottom: 5rem;
-    margin-bottom: 12rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
 } 
 .about .title {
     padding: 2rem;
@@ -458,7 +455,7 @@ footer .credit span,a{
 }
 /* STYLE DE LA SECTION FOOTER */
 
-@media screen and (min-width: 870px) {
+@media screen and (min-width: 870px) and (max-width: 1024px) {
     
     .home-section::before {
         width: 120%;
@@ -479,9 +476,7 @@ footer .credit span,a{
         padding: 3rem 2rem;
         margin-top: 5rem;
     }
-    .about .heading {
-        margin-top: -10%;
-    }
+   
     /* .about .image img {
         min-height: 30vh;
     } */
